@@ -1,2 +1,2 @@
 # segunda_practica_integradora
-Esta seria la sefgunda practrica inbtegradora del Ecommerce!!
+Esta seria la segunda practrica inbtegradora del Ecommerce!!
