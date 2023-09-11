@@ -1,2 +1,6 @@
-# segunda_practica_integradora
-Esta seria la segunda practrica inbtegradora del Ecommerce!!
+Seguna Practica integradora
+En esta estrenga el proyecto quye venia hacierndo de Ecommerce le agregamos con mongo unicio de sesion 
+y login de usaurio.
+
+gracias!!!
+

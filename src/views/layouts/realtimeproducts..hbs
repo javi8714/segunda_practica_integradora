@@ -1,0 +1,32 @@
+<p style="color: rgb(196, 20, 20);"><strong>{{error}}</strong></p>
+ 
+{{#if payload}}
+   <h1> Listado de productos</h1>
+   <ul>
+      {{#each payload}}  
+       <li>Nombre: {{this.title}} Precio: {{this.price}} Stock: {{this.stock}} </li>
+       <button oneclik="addToCart('{{this._id}}')">Agregar al carro de compras</button>
+      {{/each}}
+    </ul>
+
+    {{#if hasPrevPage}}
+       <a href="{{prevLink}}">Anterior</a>
+    {{/if}}  
+
+    {{page}}
+
+    {{#if hasNextPager}}
+      <a href="{{nextLink}}">Siguiente</a>
+    {{/if}}  
+{{else}}
+   <h2No hay productos para mostar></h2>    
+{{/if}}
+
+<script>
+    const addToCart = (productId)=>{
+        console.log('se recibio el producto ${productId}');
+    }
+</script>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/realtime.js"></script>
